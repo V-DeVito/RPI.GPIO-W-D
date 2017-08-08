@@ -12,7 +12,7 @@ GPIO.output(channels, 0)
 
 
 def code():
-    weather = pywapi.get_weather_from_weather_com('86301')
+    weather = pywapi.get_weather_from_weather_com('ZIP Code')
     temperature = int(weather['current_conditions']['temperature'])
     temp_f = temperature * 9 / 5 + 32
     humidity = int(weather['current_conditions']['humidity'])
