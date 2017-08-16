@@ -87,6 +87,6 @@ if cc == 'mostly cloudy':
 
 while True:
     code()
-    time.sleep(180)
+    time.sleep(300)
     GPIO.cleanup()
 
