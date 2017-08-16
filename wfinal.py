@@ -60,8 +60,10 @@ if cc == 'heavy rain shower':
     GPIO.output(17, 1)
 
 if cc == 'light thunderstorm' or 'heavy thunderstorm' or 'thunderstorm':
-    GPIO.output(17, 10, 9, HIGH)
-
+    GPIO.output(17, 1)
+    GPIO.output(10, 1)
+    GPIO.output(9, 1)
+    
 if cc == 'light freezing drizzle' or 'heavy freezing drizzle' or 'freezing drizzle':
     GPIO.output(4, 1)
 
