@@ -11,11 +11,10 @@ GPIO.setup(channels, GPIO.OUT)
 GPIO.output(channels, 0)
 
 
-def code():
-    weather = pywapi.get_weather_from_weather_com('ZIP Code')
-    temperature = int(weather['current_conditions']['temperature'])
-    temp_f = temperature * (9/5)+32
-    humidity = int(weather['current_conditions']['humidity'])
+weather = pywapi.get_weather_from_weather_com('ZIP Code')
+temperature = int(weather['current_conditions']['temperature'])
+temp_f = temperature * (9/5)+32
+humidity = int(weather['current_conditions']['humidity'])
 
 if humidity >= 80:
     GPIO.output(7, 1)
@@ -85,8 +84,4 @@ if cc == 'partly cloudy' or 'scattered clouds':
 if cc == 'mostly cloudy':
     GPIO.output(10, 1)
 
-while True:
-    code()
-    time.sleep(300)
-    GPIO.cleanup()
 
