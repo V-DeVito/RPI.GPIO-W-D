@@ -25,19 +25,19 @@ if humidity <= 79 and humidity >= 60:
 if humidity <= 59:
     GPIO.output(25, 1)
 
-if temperature >= 90:
+if temp_f >= 90:
     GPIO.output(14, 1)
 
-if temperature <= 89 and temperature >= 80:
+if temp_f <= 89 and temp_f >= 80:
     GPIO.output(14, 1)
 
-if temperature <= 79 and temperature >= 70:
+if temp_f <= 79 and temp_f >= 70:
     GPIO.output(18, 1)
 
-if temperature <= 69 and temperature >= 40:
+if temp_f <= 69 and temp_f >= 40:
     GPIO.output(23, 1)
 
-if temperature <= 39:
+if temp_f <= 39:
     GPIO.output(24, 1)
 
 if cc == 'drizzle' or 'light drizzle' or 'heavy drizzle':
