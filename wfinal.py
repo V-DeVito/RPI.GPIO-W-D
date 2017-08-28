@@ -10,11 +10,11 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(channels, GPIO.OUT)
 GPIO.output(channels, 0)
 
-
 weather = pywapi.get_weather_from_weather_com('ZIP Code')
 temperature = int(weather['current_conditions']['temperature'])
 temp_f = temperature * (9/5)+32
 humidity = int(weather['current_conditions']['humidity'])
+cc = (weather['current_conditions']['text'].lower())
 
 if humidity >= 80:
     GPIO.output(7, 1)
