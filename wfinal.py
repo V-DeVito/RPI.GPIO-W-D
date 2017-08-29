@@ -20,7 +20,7 @@ if humidity >= 80:
     GPIO.output(7, 1)
 
 if humidity <= 79 and humidity >= 60:
-    GPIO.output(18, 1)
+    GPIO.output(8, 1)
 
 if humidity <= 59:
     GPIO.output(25, 1)
