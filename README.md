@@ -6,4 +6,4 @@ Raspberry Pi LED GPIO Weather Display v1.0.0
 * Credit to the authors stated on that page.
 * See GPIO and diagram for pinouts.
 * Set ZIP Code in this line:
-weather = pywapi.get_weather_from_weather_com('ZIP code')
+  * weather = pywapi.get_weather_from_weather_com('ZIP code')
