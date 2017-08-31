@@ -14,12 +14,29 @@ Raspberry Pi LED GPIO Weather Display v1.0.0
 
 Understanding Current Condition LEDS:
 
-* Rain/Drizzle:
-* Heavy Rain:
-* Thunderstorms:
-* Fog:
-* Partly Cloudy:
-* Mostly Cloudy:
-* Clear:
+Check Diagram
 
-* *In the actual API documentation, there are more than just those 7 conditions. In fact, there are about 55+. It would be painful to have a LED for each of those conditions, so I condensed it down to 7 conditions. This is designed to be simple. I hope you enjoy it.
+* Rain/Drizzle: 9
+* Heavy Rain: 10
+* Thunderstorms: 10,12,13
+* Fog: 12
+* Partly Cloudy: 11
+* Mostly Cloudy: 12
+* Clear: None
+
+Temperature LEDS:
+
+* Hot: 1
+* Warm: 2
+* Moderate: 3
+* Cold: 4
+* Freezing: 5
+
+Humidity LEDS:
+
+* Very Humid: 8
+* Moderately Humid: 7
+* Slightly Humid: 6
+
+
+* *In the actual API documentation, there are more than just those 7 conditions. In fact, there are about 55+. It would be painful to have a LED for each of those conditions, so I condensed it down to 7 conditions. This is more for getting a general weather description, rather than an exact measurement This is designed to be simple. I hope you enjoy it.
